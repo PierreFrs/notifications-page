@@ -1,0 +1,67 @@
+const data = [
+  {
+    name: "Mark Webber",
+    portrait: "reacted to your recent post",
+    action: "My first tournament today!",
+    link: "../assets/images/avatar-mark-weber.webp",
+    read: false,
+    time: "1m",
+  },
+  {
+    name: "Angela Gray",
+    portrait: "../assets/images/avatar-angela-gray.webp",
+    action: "followed you",
+    link: "",
+    read: false,
+    time: "5m",
+    message: "",
+  },
+  {
+    name: "Jacob Thompson",
+    portrait: "../assets/images/avatar-jacob-thomson.webp",
+    action: "has joined your group",
+    link: "Chess Club",
+    read: false,
+    time: "1 day",
+    message: "",
+  },
+  {
+    name: "Rizky Hasanuddin",
+    portrait: "../assets/images/avatar-rizky-hasanuddin.webp",
+    action: "sent you a private message",
+    link: "",
+    read: true,
+    time: "5 days",
+    message:
+      "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+  },
+  {
+    name: "Kimberly Smith",
+    portrait: "../assets/images/avatar-kimberly-smith.webp",
+    action: "commented on your picture",
+    picture: "../assets/images/image-chess.webp",
+    read: true,
+    time: "1 week",
+    message: "",
+  },
+  {
+    name: "Nathan Peterson",
+    portrait: "../assets/images/avatar-nathan-peterson.webp",
+    action: "reacted to your recent post",
+    link: "5 end-game strategies to increase your win rate",
+    read: true,
+    time: "2 weeks",
+    message: "",
+  },
+  {
+    name: "Anna Kim",
+    portrait: "../assets/images/avatar-.webp",
+    action: "left the group",
+    link: "Chess Club",
+    read: true,
+    time: "2 weeks",
+    message: "",
+  },
+];
+
+export default data;
