@@ -1,21 +1,25 @@
 import data from "./data/data.js";
 
+const markAllAsReadBtn = document.querySelector(".mark-all-as-read-btn");
+const unreads = document.querySelector(".unreads");
+const postContainer = document.querySelector(".posts-container");
+
 // display all posts through map function
 
 const displayPosts = () => {
-  const postContainer = document.querySelector(".posts-container");
   data.map((item) => {
     const post = document.createElement("div");
     post.classList.add(
       "post",
       "grid",
       "auto-rows-auto",
-      "grid-cols-[1fr_6fr_1fr]",
+      "grid-cols-[60px_1fr_60px]",
       "gap-4",
-      "w-full"
+      "rounded-lg",
+      "p-6"
     );
     if (!item.read) {
-      post.classList.add("bg-neutralLightGrayishBlue1");
+      post.classList.add("bg-neutralVeryLightGrayishBlue");
     }
     post.innerHTML = `<img
             src=${item.portrait}
@@ -38,7 +42,7 @@ const displayPosts = () => {
                 : ""
             }
             ${
-              item.read
+              !item.read
                 ? '<span class="unread-mark w-3 h-3 bg-primaryRed inline-block rounded-full ml-1"></span>'
                 : ""
             }
@@ -62,6 +66,28 @@ const displayPosts = () => {
 
 displayPosts();
 
-// dinamiccaly display unread if unreads
+// dinamycally display unread if unreads
+const displayUnreads = () => {
+  let unreadCount = 0;
+  data.forEach((item) => {
+    if (!item.read) {
+      unreadCount++;
+    }
+  });
+  unreads.textContent = unreadCount;
+};
+displayUnreads();
 
 // mark all as read function
+// function
+const markAllAsRead = () => {
+  data.forEach((item) => {
+    item.read = true;
+  });
+  postContainer.innerHTML = "";
+  displayPosts();
+  displayUnreads();
+};
+
+// event listener
+markAllAsReadBtn.addEventListener("click", markAllAsRead);

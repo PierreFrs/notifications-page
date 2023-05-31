@@ -556,8 +556,8 @@ video {
   }
 }
 
-.absolute {
-  position: absolute;
+.relative {
+  position: relative;
 }
 
 .bottom-0 {
@@ -610,10 +610,6 @@ video {
 
 .h-3 {
   height: 0.75rem;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .w-3 {

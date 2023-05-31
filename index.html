@@ -16,11 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css-correction.css" />
 
     <title>Frontend Mentor | Notifications page</title>
   </head>
   <body
-    class="h-screen flex justify-center items-center font-jakarta bg-neutralVeryLightGrayishBlue"
+    class="flex flex-col justify-center items-center font-jakarta bg-neutralVeryLightGrayishBlue"
   >
     <main
       class="main max-w-3xl rounded-xl flex flex-col justify-center items-center p-4 bg-neutralWhite w-full"
@@ -32,15 +33,15 @@
         <h1 class="text-neutralVeryDarkBlue text-2xl font-bold">
           Notifications
           <span
-            class="unread-count text-xl text-neutralWhite bg-primaryBlue px-3 py-1 rounded-lg ml-1"
+            class="unreads text-xl text-neutralWhite bg-primaryBlue px-3 py-1 rounded-lg ml-1"
             >3</span
           >
         </h1>
-        <p
-          class="text-neutralDarkGrayishBlue hover:text-primaryBlue cursor-pointer"
+        <button
+          class="mark-all-as-read-btn text-neutralDarkGrayishBlue hover:text-primaryBlue cursor-pointer"
         >
           Mark all as read
-        </p>
+        </button>
       </div>
       <!-- end posts header -->
       <!-- posts container -->
@@ -91,7 +92,7 @@
       <!-- end posts container -->
     </main>
 
-    <div class="attribution text-xs absolute bottom-0">
+    <div class="attribution text-xs relative bottom-0">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a

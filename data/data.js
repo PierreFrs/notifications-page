@@ -4,7 +4,7 @@ const data = [
     portrait: "../assets/images/avatar-mark-webber.webp",
     action: "reacted to your recent post",
     link: "My first tournament today!",
-    read: true,
+    read: false,
     time: "1m",
   },
   {
@@ -12,7 +12,7 @@ const data = [
     portrait: "../assets/images/avatar-angela-gray.webp",
     action: "followed you",
     link: "",
-    read: true,
+    read: false,
     time: "5m",
   },
   {
@@ -20,14 +20,14 @@ const data = [
     portrait: "../assets/images/avatar-jacob-thompson.webp",
     action: "has joined your group",
     link: "Chess Club",
-    read: true,
+    read: false,
     time: "1 day",
   },
   {
     name: "Rizky Hasanuddin",
     portrait: "../assets/images/avatar-rizky-hasanuddin.webp",
     action: "sent you a private message",
-    read: false,
+    read: true,
     time: "5 days",
     message:
       "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
@@ -37,7 +37,7 @@ const data = [
     portrait: "../assets/images/avatar-kimberly-smith.webp",
     action: "commented on your picture",
     picture: "../assets/images/image-chess.webp",
-    read: false,
+    read: true,
     time: "1 week",
   },
   {
@@ -45,7 +45,7 @@ const data = [
     portrait: "../assets/images/avatar-nathan-peterson.webp",
     action: "reacted to your recent post",
     link: "5 end-game strategies to increase your win rate",
-    read: false,
+    read: true,
     time: "2 weeks",
   },
   {
@@ -53,7 +53,7 @@ const data = [
     portrait: "../assets/images/avatar-anna-kim.webp",
     action: "left the group",
     link: "Chess Club",
-    read: false,
+    read: true,
     time: "2 weeks",
   },
 ];
